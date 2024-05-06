@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- sass --watch scss/style.scss css/style.css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/data.js"></script>
+    <script defer src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Duki</title>
+</head>
+<body>
+    <header class="container-navbar">
+        <picture class="logo">
+            <img src="./assests/Logo-Duki.jpg" alt="Logo Duki">
+        </picture>
+        <ul class="navbar">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Shows</a>
+            </li>
+            <li>
+                <a href="#discografica">Discografica</a>
+            </li>
+            <li>
+                <a href="#">Fotos</a>
+            </li>
+            <li>
+                <a href="#">Tienda</a>
+            </li>
+        </ul>
+        <ul class="navbar-redes">
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="carrosel">
+            <article class="contenedor" id="contenedorCarrosel">
+                <div class="boton atras">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="boton adelante">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <img src="./assests/Duki-concierto-1.jpg" alt="Duki Concierto">
+            </article>
+        </section>
+        <section class="discografica" id="discografica">
+            <article class="discografica-container">
+                <div class="logo">
+                    <h2>DISCOGRAFICA</h2>
+                </div>
+                <div class="albumes" id="albumes-container"></div>
+            </article>
+        </section>
+    </main>
+</body>
+<script src="https://kit.fontawesome.com/c5c9b9e858.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,68 @@
+.discografica {
+    max-width: 1980px;
+    max-height: 1200px;
+    margin: 0 auto;
+    background-image: url(../assests/duki-concierto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .discografica-container {
+        background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65));
+        padding: 6rem;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem;
+
+            h2 {
+                font-size: 4rem;
+                color: #fff;
+            }
+        }
+
+        .albumes {
+            display: grid;
+            gap: 3rem;
+            grid-template-areas:
+                "articulo articulo articulo"
+                "articulo articulo articulo"
+                "articulo articulo articulo";
+            grid-template-columns: repeat(3, 350px);
+            grid-template-rows: repeat(3, 1fr);
+            place-content: center;
+
+            .articulo {
+                background: transparent;
+                border-radius: 2rem;
+                border: .2rem solid #fff;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                overflow: hidden;
+                background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65));
+
+                img {
+                    width: 100%;
+                    padding: 2rem;
+                }
+
+                h2 {
+                    padding: .9rem;
+                    font-size: 2.2rem;
+                    flex-grow: 1;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}

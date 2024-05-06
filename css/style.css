@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  cursor: context-menu;
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.container-navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+}
+.container-navbar .logo {
+  padding: 2rem 3rem;
+  width: 150px;
+}
+.container-navbar .logo img {
+  width: 100%;
+}
+.container-navbar .navbar {
+  display: flex;
+  gap: 4rem;
+  padding: 0 2rem;
+  font-size: 2.4rem;
+}
+.container-navbar .navbar-redes {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+.carrosel {
+  margin: 0 auto;
+  max-width: 1980px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+}
+.carrosel img {
+  width: 100%;
+  max-height: 1300px;
+}
+.carrosel .contenedor {
+  position: relative;
+}
+.carrosel .contenedor .boton {
+  position: absolute;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.carrosel .contenedor .atras {
+  left: 2%;
+  top: calc(50% - 70px);
+}
+.carrosel .contenedor .adelante {
+  right: 2%;
+  top: calc(50% - 70px);
+}
+
+.discografica {
+  max-width: 1980px;
+  max-height: 1200px;
+  margin: 0 auto;
+  background-image: url(../assests/duki-concierto.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.discografica .discografica-container {
+  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65));
+  padding: 6rem;
+}
+.discografica .discografica-container .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+}
+.discografica .discografica-container .logo h2 {
+  font-size: 4rem;
+  color: #fff;
+}
+.discografica .discografica-container .albumes {
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "articulo articulo articulo" "articulo articulo articulo" "articulo articulo articulo";
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 1fr);
+  place-content: center;
+}
+.discografica .discografica-container .albumes .articulo {
+  background: transparent;
+  border-radius: 2rem;
+  border: 0.2rem solid #fff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(rgba(5, 7, 12, 0.65), rgba(5, 7, 12, 0.65));
+}
+.discografica .discografica-container .albumes .articulo img {
+  width: 100%;
+  padding: 2rem;
+}
+.discografica .discografica-container .albumes .articulo h2 {
+  padding: 0.9rem;
+  font-size: 2.2rem;
+  flex-grow: 1;
+}
+.discografica .discografica-container .albumes .articulo p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

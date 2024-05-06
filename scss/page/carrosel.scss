@@ -1,0 +1,36 @@
+.carrosel {
+    margin: 0 auto;
+    max-width: 1980px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+
+    img {
+        width: 100%;
+        max-height: 1300px;
+    }
+
+    .contenedor {
+        position: relative;
+
+        .boton {
+            position: absolute;
+            font-size: 3rem;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .atras {
+            left: 2%;
+            top: calc(50% - 70px);
+        }
+
+        .adelante {
+            right: 2%;
+            top: calc(50% - 70px);
+        }
+    }
+}
