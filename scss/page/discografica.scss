@@ -1,6 +1,6 @@
 .discografica {
     max-width: 1980px;
-    max-height: 1200px;
+    max-height: 1400px;
     margin: 0 auto;
     background-image: url(../assests/duki-concierto.jpg);
     background-repeat: no-repeat;
@@ -59,8 +59,44 @@
                 }
 
                 p {
-                    font-size: 1.4rem;
-                    padding-bottom: 1rem;
+                    font-size: 1.5rem;
+                }
+
+                .botones {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 2rem;
+
+                    .likes {
+                        display: flex;
+                        gap: 1rem;
+                        padding: 1rem;
+                        align-items: center;
+
+                        .estrella {
+                            padding: .9rem .7rem;
+                            border-radius: 100%;
+                            background-color: transparent;
+                            border: solid 2px #fff;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .boton-spotify {
+                        padding: 1rem 2.1rem;
+                        border-radius: 2rem;
+                        border: none;
+                        transition: all .2s ease;
+                        display: flex;
+                        gap: .5rem;
+                        align-items: center;
+                    }
+
+                    .boton-spotify:hover {
+                        background-color: gray;
+                    }
                 }
             }
         }

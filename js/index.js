@@ -7,6 +7,16 @@ for (const e of albumes) {
         <img src="${e.imagenUrl}"/>
         <h2>${e.titulo}</h2>
         <p>${e.año}</p>
+        <div class="botones">
+            <div class="likes">
+                <button class="estrella botonFavorito" data-id="$(e.id)">
+                    <i class="fa-regular fa-star fa-2xl"></i>
+                </button>
+                <p>${e.likes}</p>
+            </div>
+            <button class="boton-spotify">
+            <i class="fa-brands fa-spotify fa-2xl"></i><p>Escuchar ahora</p></button>
+        </div>
     </article>
     `;
     mySection.innerHTML += articulos;
